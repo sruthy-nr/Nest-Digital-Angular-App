@@ -14,6 +14,7 @@ import { AddCourseComponent } from './add-course/add-course.component';
 import { FormsModule } from '@angular/forms';
 import { AddFriendComponent } from './add-friend/add-friend.component';
 import { ViewCourseComponent } from './view-course/view-course.component';
+import { ViewFriendComponent } from './view-friend/view-friend.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { ViewCourseComponent } from './view-course/view-course.component';
     AdminComponent,
     AddCourseComponent,
     AddFriendComponent,
-    ViewCourseComponent
+    ViewCourseComponent,
+    ViewFriendComponent
   ],
   imports: [
     BrowserModule,
