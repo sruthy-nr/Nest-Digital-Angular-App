@@ -5,15 +5,15 @@
             <div class="row g-3 mt-3">
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                         <label for="" class="form-label">EMPLOYEE ID</label>
-                        <input type="text" class="form-control">
+                        <input type="text" class="form-control" name="employeeid" [(ngModel)]="employeeid">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                         <label for="" class="form-label">PASSWORD</label>
-                        <input type="password" class="form-control">
+                        <input type="password" class="form-control" name="password" [(ngModel)]="password">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                         <label for="" class="form-label"></label>
-                        <button class="btn btn-primary">LOGIN</button>
+                        <button class="btn btn-primary" (click)="readValues()">LOGIN</button>
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                         <label for="" class="form-label"></label>
