@@ -3,17 +3,14 @@
     <div class="row">
         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
             <div class="row g-3 mt-3">
-                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                    <div class="col col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4" *ngFor="let i of friend">
-                        <div class="card" style="width: 30rem;">
-                            <!-- <img src="https://www.nestdigital.com/images/inspiration.png" class="card-img-top" alt="..."> -->
-                            <div class="card-body">
-                                <h5 class="card-title">NAME:{{i.name}}</h5>
-                                <h6 class="card-title">FRIEND'S NAME:{{i.friendName}}
-                                    FRIEND'S NICKNAME:{{i.friendNickName}}
-                                </h6>
-                              <p class="card-text">DESCRIBE YOUR FRIEND:{{i.DescribeYourFriend}}</p>
-                            </div>
+                <div class="col col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4" *ngFor="let i of friend">
+                    <div class="card" style="width: 20rem;">
+                        <!-- <img src={{j.img}} class="card-img-top" alt="..."  *ngFor="let j of gallery"> -->
+                        <div class="card-body">
+                            <h5 class="card-title">NAME:{{i.name}}</h5>
+                            <h6 class="card-title">FRIEND'S NAME:{{i.friendName}}</h6>
+                            <h6 class="card-title">FRIEND'S NICKNAME:{{i.friendNickName}}</h6>
+                          <p class="card-text">DESCRIBE YOUR FRIEND:{{i.DescribeYourFriend}}</p>
                         </div>
                     </div>
                 </div>
