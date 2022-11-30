@@ -15,7 +15,65 @@ import { FormsModule } from '@angular/forms';
 import { AddFriendComponent } from './add-friend/add-friend.component';
 import { ViewCourseComponent } from './view-course/view-course.component';
 import { ViewFriendComponent } from './view-friend/view-friend.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { RouterModule, Routes } from '@angular/router';
+import { NavbarAdminComponent } from './navbar-admin/navbar-admin.component';
+import { NavbarEmployeeComponent } from './navbar-employee/navbar-employee.component';
 
+const myRoute:Routes=[
+  {
+    path:"",
+    component:HomeComponent
+  },
+  {
+    path:"about",
+    component:AboutComponent
+  },
+  {
+    path:"gallery",
+    component:GalleryComponent
+  },
+  {
+    path:"contact",
+    component:ContactComponent
+  },
+  {
+    path:"admin",
+    component:AdminComponent
+  },
+  {
+    path:"employee",
+    component:EmployeeComponent
+  },
+  {
+    path:"register",
+    component:EmployeeregisterComponent
+  },
+  {
+    path:"addc",
+    component:AddCourseComponent
+  },
+  {
+    path:"addf",
+    component:AddFriendComponent
+  },
+  {
+    path:"viewc",
+    component:ViewCourseComponent
+  },
+  {
+    path:"viewf",
+    component:ViewFriendComponent
+  },
+  {
+    path:"navadmin",
+    component:NavbarAdminComponent
+  },
+  {
+    path:"navemployee",
+    component:NavbarEmployeeComponent
+  }
+]
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,12 +87,16 @@ import { ViewFriendComponent } from './view-friend/view-friend.component';
     AddCourseComponent,
     AddFriendComponent,
     ViewCourseComponent,
-    ViewFriendComponent
+    ViewFriendComponent,
+    NavbarComponent,
+    NavbarAdminComponent,
+    NavbarEmployeeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    RouterModule.forRoot(myRoute)
   ],
   providers: [],
   bootstrap: [AppComponent]
