@@ -12,6 +12,7 @@ import { EmployeeregisterComponent } from './employeeregister/employeeregister.c
 import { AdminComponent } from './admin/admin.component';
 import { AddCourseComponent } from './add-course/add-course.component';
 import { FormsModule } from '@angular/forms';
+import { AddFriendComponent } from './add-friend/add-friend.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { FormsModule } from '@angular/forms';
     EmployeeComponent,
     EmployeeregisterComponent,
     AdminComponent,
-    AddCourseComponent
+    AddCourseComponent,
+    AddFriendComponent
   ],
   imports: [
     BrowserModule,
